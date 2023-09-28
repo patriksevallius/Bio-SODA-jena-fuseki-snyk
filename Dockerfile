@@ -30,7 +30,7 @@ RUN echo "359f8f99c8fa5968c1bdddcc39214db86da822804e3dd5fa182b86daff2d121a85b210
 ADD entrypoint.sh /apache-jena-fuseki-${JENA_VERSION}
 ADD config.ttl /apache-jena-fuseki-${JENA_VERSION}/run/
 
-FROM openjdk:11-jre-slim-bullseye
+FROM openjdk:22-ea-15-jdk-slim-bullseye
 
 ARG JENA_VERSION
 
